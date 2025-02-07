@@ -1,0 +1,202 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main Container */
+.portfolio-section {
+    width: 50%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.portfolio-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Form Section */
+.form-section {
+    margin-bottom: 40px;
+}
+
+.form-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0099cc;
+}
+
+/* Goals Overview Table */
+#goal-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+#goal-table th,
+#goal-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#goal-table th {
+    background-color: #f1f1f1;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+#goal-table td {
+    font-size: 1rem;
+}
+
+.status-active {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-complete {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+
+.portfolio-chart-container {
+    text-align: center;
+}
+
+.portfolio-chart-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .charts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-section input,
+    .form-section button {
+        width: 100%;
+    }
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #2c3e50; /* Dark navy */
+    color: #ecf0f1; /* Light gray */
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 113px;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ecf0f1;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+a{
+    text-decoration: none;
+}

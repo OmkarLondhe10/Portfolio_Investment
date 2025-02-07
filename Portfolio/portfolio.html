@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tracker</title>
+    <link rel="stylesheet" href="/static/css/portfolio.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">InvestSmart</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <div class="portfolio-section">
+        <h2>Portfolio Tracker</h2>
+        <!-- Form to Add Goals -->
+        <div class="form-section">
+            <h3>Track Your Portfolio</h3>
+            <label for="goal-name">Goal Name:</label>
+            <input type="text" id="goal-name" placeholder="e.g., Retirement Fund">
+            
+            <label for="goal-amount">Target Amount (₹):</label>
+            <input type="number" id="goal-amount" placeholder="e.g., 500000">
+            
+            <label for="goal-duration">Goal Duration (Years):</label>
+            <input type="number" id="goal-duration" min="1" placeholder="e.g., 10">
+            
+            <button id="add-goal">Add Goal</button>
+        </div>
+
+        <!-- Goals Overview Table -->
+        <div class="goal-overview">
+            <h3>Your Goals Overview</h3>
+            <table id="goal-table">
+                <thead>
+                    <tr>
+                        <th>Goal Name</th>
+                        <th>Target Amount (₹)</th>
+                        <th>Duration (Years)</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+        
+    <script src="/static/js/portfolio.js"></script>
+</body>
+</html>
