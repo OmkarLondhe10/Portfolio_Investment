@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Portfolios</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/css/compare.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <h2>Compare Saved Portfolios</h2>
+        <a href="index.html" class="back-link">← Back to Investment Calculator</a>
+    </div>
+</header>
+
+<section class="portfolio-section">
+    <button id="clearPortfolio">Clear All Portfolios</button>
+    
+    <div class="table-container">
+        <table id="saved-portfolios">
+            <thead>
+                <tr id="portfolioHeaders">
+                    <th>Asset Type</th>
+                    <!-- Portfolio headers will be inserted dynamically -->
+                </tr>
+            </thead>
+            <tbody id="portfolioData">
+                <!-- Portfolio data will be loaded dynamically -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="chart-section">
+    <h3>Portfolio Comparison Chart</h3>
+    <canvas id="comparisonChart"></canvas>
+</section>
+
+
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
