@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Table & Layout */
+.portfolio-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #2c3e50;
+}
+
+/* Table Headers */
+th {
+    background: #2c3e50;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 14px;
+    border-bottom: 3px solid #1a252f;
+}
+
+/* Table Cells */
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background: #f2f5f7;
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Hover Effect */
+tr:hover {
+    background: rgba(44, 62, 80, 0.15);
+    transition: background 0.3s ease-in-out;
+}
+
+/* Chart Styling */
+.chart-section {
+    text-align: center;
+    padding: 20px;
+}
+
+canvas {
+    width: 100%;
+    max-height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+
+.delete-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.portfolio-delete-wrapper {
+    margin-top: 10px;
+}
+
